@@ -1,0 +1,10 @@
+BasedOnStyle: LLVM
+
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignConsecutiveMacros: false
+AlignConsecutiveBitFields: false
+BreakBeforeBraces: Linux
+
+UseTab: Never
+IndentWidth: 4
