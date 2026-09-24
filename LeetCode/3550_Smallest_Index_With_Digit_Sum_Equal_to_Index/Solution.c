@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int digitSum(int num)
 {
     int sum = 0;
@@ -21,14 +19,4 @@ int smallestIndex(int *nums, int numsSize)
     }
 
     return -1;
-}
-
-int main()
-{
-    int numbers[] = {1, 322, 2};
-    int n = (int)(sizeof(numbers) / sizeof(numbers[0]));
-
-    printf("%d\n", smallestIndex(numbers, n));
-
-    return 0;
 }

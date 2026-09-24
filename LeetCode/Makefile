@@ -4,7 +4,7 @@ java:
 	javac ./Solution.java && java Solution
 
 c:
-	gcc -o solution Solution.c && ./solution
+	gcc -o solution Solution.c -lm && ./solution
 
 python:
 	./Solution.py
