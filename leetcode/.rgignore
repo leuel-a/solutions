@@ -1,5 +1,14 @@
-solution
+/solution
+
+# .rgignore
+# .editorconfig
+# .gitignore
+# .gitkeep
 
 Solution.py
 Solution.java
 Solution.c
+
+!/Solution.py
+!/Solution.java
+!/Solution.c
