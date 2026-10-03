@@ -1,6 +1,6 @@
 *.class
 
 solution
-./Solution.java
-./Solution.c
-./Solution.py
+Test.java
+Test.c
+Test.py
