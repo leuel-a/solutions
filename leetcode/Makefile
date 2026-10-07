@@ -1,4 +1,4 @@
-.PHONY: run clean python c
+.PHONY: run clean python c sh
 
 python:
 	./Solution.py
@@ -8,6 +8,9 @@ java:
 
 c:
 	gcc -o solution Solution.c -lm && ./solution
+
+sh:
+	./Solution.sh
 
 clean:
 	rm *.class
