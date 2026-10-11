@@ -1,16 +1,21 @@
 .PHONY: run clean python c sh
 
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+JAVAC = javac
+JAVA = java
+
 python:
 	./Solution.py
 
 java:
-	javac ./Solution.java && java Solution
+	$(JAVAC) ./Solution.java && $(JAVA) Solution
 
 c:
-	gcc -o solution Solution.c -lm && ./solution
+	$(CC) -o solution $(CFLAGS) Solution.c -lm && ./solution
 
 sh:
 	./Solution.sh
 
 clean:
-	rm *.class
+	rm *.class solution
