@@ -2,9 +2,7 @@
 
 int comp(const void *a, const void *b)
 {
-	int x = *(const int *)a;
-	int y = *(const int *)b;
-
+	int x = *(const int *)a, y = *(const int *)b;
 	return x == y ? 0 : x < y ? -1 : 1;
 }
 
@@ -20,15 +18,12 @@ long long maxAlternatingSum(int *nums, int n)
 
 	qsort(squares, n, sizeof(squares[0]), comp);
 
-	int i = 0, j = n - 1;
-	while (i < j)
+	for (int i = 0; i < n / 2; i++)
 	{
-		sum += (squares[j] - squares[i]);
-		i++;
-		j--;
+		sum -= squares[i];
 	}
 
-	if (i == j)
+	for (int i = n / 2; i < n; i++)
 	{
 		sum += squares[i];
 	}
