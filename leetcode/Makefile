@@ -1,6 +1,7 @@
-.PHONY: run clean python c sh
+.PHONY: run clean python c sh cpp java
 
 CC = gcc
+CPP = g++
 CFLAGS = -Wall -Werror -Wextra -pedantic
 JAVAC = javac
 JAVA = java
@@ -13,6 +14,9 @@ java:
 
 c:
 	$(CC) -o solution $(CFLAGS) Solution.c -lm && ./solution
+
+cpp:
+	$(CPP) -o solution $(CFLAGS) Solution.cpp && ./solution
 
 sh:
 	./Solution.sh
