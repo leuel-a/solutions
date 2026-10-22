@@ -13,6 +13,7 @@ Read about KMP, Rabin-Karp, and Trie. String matching algorithms.
 - [X]: https://leetcode.com/problems/longest-duplicate-substring
 - [X]: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string
 - [X]: https://leetcode.com/problems/sum-of-sortable-integers
+- [X]: https://leetcode.com/problems/my-calendar-i
 
 # Resources
 
