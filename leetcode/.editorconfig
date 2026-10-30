@@ -2,7 +2,7 @@
 # https://editorconfig.org
 root = true
 
-[*]
+[**]
 charset = utf-8
 end_of_line = lf
 insert_final_newline = true
@@ -10,25 +10,25 @@ trim_trailing_whitespace = true
 indent_style = space
 indent_size = 4
 
-[*.java]
+[**.java]
 indent_size = 4
 max_line_length = 80
 
-[*.{yml,yaml}]
+[**.{yml,yaml}]
 indent_size = 2
 
-[*.{xml,pom}]
+[**.{xml,pom}]
 indent_size = 4
 
 [pom.xml]
 indent_size = 4
 
-[*.{json,md}]
+[**.{json,md}]
 indent_size = 4
 
 [Makefile]
 indent_style = tab
 
-[*.c]
+[**.c]
 indent_style = tab
 indent_size = 4
