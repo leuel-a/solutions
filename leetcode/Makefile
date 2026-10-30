@@ -3,6 +3,7 @@
 CC = gcc
 CPP = g++
 CFLAGS = -Wall -Werror -Wextra -pedantic
+CPPFLAGS =
 JAVAC = javac
 JAVA = java
 
@@ -16,7 +17,7 @@ c:
 	$(CC) -o solution $(CFLAGS) Solution.c -lm && ./solution
 
 cpp:
-	$(CPP) -o solution $(CFLAGS) Solution.cpp && ./solution
+	$(CPP) -o solution $(CPPFLAGS) Solution.cpp && ./solution
 
 sh:
 	./Solution.sh
